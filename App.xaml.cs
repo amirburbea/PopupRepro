@@ -1,7 +1,3 @@
-﻿using System.Windows;
+﻿namespace PopupRepro;
 
-namespace PopupRepro;
-
-partial class App : Application
-{
-}
+partial class App {}

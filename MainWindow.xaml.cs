@@ -1,14 +1,13 @@
 ﻿using System.Reflection;
 using System.Runtime.Versioning;
-using System.Windows;
 
 namespace PopupRepro;
 
-partial class MainWindow : Window
+partial class MainWindow
 {
     public MainWindow()
     {
-        InitializeComponent();
         this.Title = Assembly.GetEntryAssembly()!.GetCustomAttribute<TargetFrameworkAttribute>()!.FrameworkName;
+        InitializeComponent();
     }
 }
